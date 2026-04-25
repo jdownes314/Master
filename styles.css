@@ -1,42 +1,60 @@
 :root {
-  --primary: #1e40af;
-  --secondary: #2563eb;
-  --bg: #ffffff;
+  --primary: #1e3a8a;
+  --accent: #2563eb;
+  --background: #ffffff;
   --muted: #f1f5f9;
   --text: #0f172a;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background: var(--background);
   line-height: 1.6;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
 }
 
 /* Hero */
 .hero {
   min-height: 90vh;
   background: linear-gradient(
-      rgba(15, 23, 42, 0.55),
-      rgba(15, 23, 42, 0.55)
-    ),
-    url("assets/hero.jpg") center / cover no-repeat;
+      rgba(15, 23, 42, 0.7),
+      rgba(15, 23, 42, 0.7)
+    );
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  flex-direction: column;
 }
 
 .hero-content {
-  max-width: 800px;
-  padding: 2rem;
+  margin: auto;
+  max-width: 700px;
+  text-align: center;
   color: white;
+  padding: 2rem;
 }
 
 .hero h1 {
@@ -45,7 +63,7 @@ body {
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
@@ -53,14 +71,14 @@ body {
 .btn-primary,
 .btn-secondary {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 6px;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .btn-primary {
-  background: var(--secondary);
+  background: var(--accent);
   color: white;
 }
 
@@ -69,46 +87,59 @@ body {
 }
 
 .btn-secondary {
-  background: white;
-  color: var(--primary);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  color: white;
 }
 
 /* Sections */
-.content-section {
-  padding: 4rem 1.5rem;
+.section {
   max-width: 900px;
   margin: auto;
+  padding: 4rem 2rem;
 }
 
-.content-section h2 {
+.section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.content-section.alt {
-  background: var(--muted);
+.section p,
+.section ul {
+  font-size: 1.05rem;
 }
 
-/* CTA */
-.cta {
-  text-align: center;
-  padding: 4rem 1.5rem;
-  background: var(--primary);
-  color: white;
+.section ul {
+  padding-left: 1.2rem;
+}
+
+.section.alt {
+  background: var(--muted);
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
-  font-size: 0.9rem;
   background: #020617;
   color: #cbd5f5;
+  font-size: 0.9rem;
 }
 
-/* Responsive */
+/* Mobile */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
   }
+
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
+``
