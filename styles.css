@@ -340,23 +340,25 @@ tbody tr:hover {
 }
 
 /* Sticky heading with subheading */
-.sticky-heading {
+
+.sticky-header {
   position: sticky;
   top: 0;
-  background: #fff7f7;
-  text-align: center;
-  padding: 1rem 0 0.75rem;
   z-index: 10;
+  background: #fff7f7;
+  padding: 1rem 0 0.75rem;
   border-bottom: 3px solid var(--tnt-red);
+  text-align: center;
 }
 
+
 /* Main heading */
-.sticky-heading h2 {
+
+.sticky-header h2 {
   margin: 0;
-  text-align: center;
   color: var(--tnt-red);
-  font-size: 1.8rem;
 }
+
 
 /* Subheading */
 .sticky-subheading {
