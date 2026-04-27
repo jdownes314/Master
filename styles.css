@@ -327,4 +327,9 @@ tbody tr:hover {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+
+.recognition {
+  padding-top: 2rem;   /* reduce space above Activity Leaders */
+  margin-top: 0;       /* remove extra separation */
+}
 ``
