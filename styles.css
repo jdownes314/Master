@@ -353,6 +353,7 @@ tbody tr:hover {
 /* Main heading */
 .sticky-heading h2 {
   margin: 0;
+  text-align: center;
   color: var(--tnt-red);
   font-size: 1.8rem;
 }
