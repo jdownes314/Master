@@ -366,4 +366,10 @@ tbody tr:hover {
   font-weight: 500;
   color: #334155; /* soft slate */
 }
+
+
+.sticky-heading {
+  text-align: center;
+}
+
 ``
