@@ -328,14 +328,7 @@ tbody tr:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.recognition {
-  padding-top: 1rem;   /* reduce space above Activity Leaders */
-  margin-top: 0;       /* remove extra separation */
-}
 
-.recognition h2 {
-  margin-top: 0;
-}
 
 .recognition {
   padding-top: 1.5rem;
