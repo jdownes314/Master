@@ -189,6 +189,51 @@ footer {
     font-size: 2.2rem;
   }
 
+  /* Recognition Section */
+.recognition {
+  background: #fff;
+  border-top: 6px solid var(--tnt-red);
+}
+
+.recognition h2 {
+  color: var(--tnt-red);
+  margin-bottom: 0.5rem;
+}
+
+.recognition-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.1rem;
+}
+
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.recognition-card {
+  background: var(--muted);
+  padding: 1.75rem;
+  border-radius: 12px;
+  border-left: 6px solid var(--tnt-red);
+}
+
+.recognition-card h3 {
+  margin-top: 0;
+  color: var(--tnt-red-dark);
+}
+
+.recognition-card .name {
+  font-weight: 700;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.recognition-card .description {
+  font-size: 0.95rem;
+}
+
   .nav {
     flex-direction: column;
     gap: 0.5rem;
