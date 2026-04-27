@@ -351,6 +351,10 @@ tbody tr:hover {
   text-align: center;
 }
 
+.section {
+  overflow: visible;
+}
+
 
 /* Main heading */
 
