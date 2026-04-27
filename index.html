@@ -7,7 +7,54 @@
   <meta name="description" content="A polished GitHub Pages website converted from Adobe Express." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+
+  https://cdn.jsdelivr.net/npm/chart.js</script>
+
+<script>
+  const tntRed = "#D9102D";
+
+  // Chart 1: Activity by Team
+  new Chart(document.getElementById("chartTeam"), {
+    type: "bar",
+    data: {
+      labels: ["Team A", "Team B", "Team C", "Team D"],
+      datasets: [{
+        label: "Activities",
+        data: [32, 45, 28, 38],
+        backgroundColor: tntRed
+      }]
+    }
+  });
+
+  // Chart 2: Weekly Trend
+  new Chart(document.getElementById("chartTrend"), {
+    type: "line",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      datasets: [{
+        label: "Participation",
+        data: [12, 18, 25, 22, 30],
+        borderColor: tntRed,
+        tension: 0.3,
+        fill: false
+      }]
+    }
+  });
+
+  // Chart 3: Activity Type Breakdown
+  new Chart(document.getElementById("chartType"), {
+    type: "doughnut",
+    data: {
+      labels: ["Training", "Meetings", "Events"],
+      datasets: [{
+        data: [40, 35, 25],
+        backgroundColor: [tntRed, "#B70D25", "#F87171"]
+      }]
+    }
+  });
+</script>
+  
+  <body>
 
 <header class="hero cover">
   <div class="cover-content">
