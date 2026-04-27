@@ -360,6 +360,7 @@ tbody tr:hover {
 /* Subheading */
 .sticky-subheading {
   margin-top: 0.25rem;
+  text-align: center;
   font-size: 1rem;
   font-weight: 500;
   color: #334155; /* soft slate */
