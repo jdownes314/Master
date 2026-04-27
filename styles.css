@@ -336,4 +336,13 @@ tbody tr:hover {
 .recognition h2 {
   margin-top: 0;
 }
+
+.recognition {
+  padding-top: 1.5rem;
+}
+
+.recognition h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
 ``
