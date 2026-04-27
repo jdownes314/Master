@@ -300,3 +300,31 @@ tbody tr:hover {
   background: #e5e7eb;
 }
 ``
+
+/* Activity Snapshot Images */
+.activity-snapshot {
+  border-top: 6px solid var(--tnt-red);
+}
+
+.snapshot-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.chart-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.chart-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+``
