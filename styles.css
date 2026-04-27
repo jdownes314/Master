@@ -1,14 +1,16 @@
-:root {
-  --tnt-red: #D9102D;      /* Exact TNT red from logo */
-  --tnt-red-dark: #B70D25;
-  --text-dark: #0f172a;
-}
+
 :root {
   --primary: #1e3a8a;
   --accent: #2563eb;
   --background: #ffffff;
   --muted: #f1f5f9;
   --text: #0f172a;
+}
+
+:root {
+  --tnt-red: #D9102D;      /* Exact TNT red from logo */
+  --tnt-red-dark: #B70D25;
+  --text-dark: #0f172a;
 }
 
 * {
