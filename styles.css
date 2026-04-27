@@ -329,7 +329,7 @@ tbody tr:hover {
 }
 
 .recognition {
-  padding-top: 2rem;   /* reduce space above Activity Leaders */
+  padding-top: 1rem;   /* reduce space above Activity Leaders */
   margin-top: 0;       /* remove extra separation */
 }
 ``
