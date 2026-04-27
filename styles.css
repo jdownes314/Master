@@ -344,12 +344,13 @@ tbody tr:hover {
 .sticky-header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
   background: #fff7f7;
   padding: 1rem 0 0.75rem;
   border-bottom: 3px solid var(--tnt-red);
   text-align: center;
 }
+
 
 .section {
   overflow: visible;
@@ -364,14 +365,14 @@ tbody tr:hover {
 }
 
 
+
 /* Subheading */
 .sticky-subheading {
   margin-top: 0.25rem;
-  text-align: center;
   font-size: 1rem;
-  font-weight: 500;
-  color: #334155; /* soft slate */
+  color: #334155;
 }
+
 
 
 .sticky-heading {
