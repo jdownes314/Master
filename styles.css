@@ -332,4 +332,8 @@ tbody tr:hover {
   padding-top: 1rem;   /* reduce space above Activity Leaders */
   margin-top: 0;       /* remove extra separation */
 }
+
+.recognition h2 {
+  margin-top: 0;
+}
 ``
