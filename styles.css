@@ -338,4 +338,29 @@ tbody tr:hover {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+
+/* Sticky heading with subheading */
+.sticky-heading {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 1rem 0 0.75rem;
+  z-index: 10;
+  border-bottom: 3px solid var(--tnt-red);
+}
+
+/* Main heading */
+.sticky-heading h2 {
+  margin: 0;
+  color: var(--tnt-red);
+  font-size: 1.8rem;
+}
+
+/* Subheading */
+.sticky-subheading {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #334155; /* soft slate */
+}
 ``
