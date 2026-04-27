@@ -83,22 +83,45 @@
     </div>
 
     <div class="charts">
-  <h2>📊 Activity Snapshot</h2>
+ <section class="section activity-snapshot">
+  <h2>📋 Activity Snapshot</h2>
+  <p class="snapshot-intro">
+    Weekly activity summary pulled from our tracking spreadsheet.
+  </p>
 
-  <div class="chart-grid">
-    <canvas id="chartTeam"></canvas>
-    <canvas id="chartTrend"></canvas>
-    <canvas id="chartType"></canvas>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Activities</th>
+          <th>Participation</th>
+          <th>Top Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Team A</td>
+          <td>32</td>
+          <td>85%</td>
+          <td>Training</td>
+        </tr>
+        <tr>
+          <td>Team B</td>
+          <td>45</td>
+          <td>92%</td>
+          <td>Meetings</td>
+        </tr>
+        <tr>
+          <td>Team C</td>
+          <td>28</td>
+          <td>78%</td>
+          <td>Events</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</div>
-``
-    <div class="recognition-card">
-      <h3>Team Player Award</h3>
-      <p class="name">Jordan Lee</p>
-      <p class="description">
-        Consistently supporting teammates and fostering a positive team culture.
-      </p>
-    </div>
+</section>
 
     <div class="recognition-card">
       <h3>Above & Beyond</h3>
