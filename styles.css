@@ -250,7 +250,6 @@ footer {
   gap: 2rem;
   justify-content: center;
 }
-``
 
 /* Chart image styling */
 .chart-image {
@@ -262,6 +261,7 @@ footer {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+ ``
   
 canvas {
   background: #ffffff;
