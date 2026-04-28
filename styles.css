@@ -244,12 +244,13 @@ footer {
   margin-top: 4rem;
 }
 
-.chart-grid {
+.chart-image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 480px));
   gap: 2rem;
-  margin-top: 2rem;
+  justify-content: center;
 }
+``
 
 /* Chart image styling */
 .chart-image {
