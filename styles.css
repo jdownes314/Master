@@ -251,6 +251,17 @@ footer {
   margin-top: 2rem;
 }
 
+/* Chart image styling */
+.chart-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+  
 canvas {
   background: #ffffff;
   border-radius: 12px;
@@ -347,16 +358,7 @@ tbody tr:hover {
   overflow: visible;
 }
 
-/* Chart image styling */
-.chart-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  background: white;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
+
 ``
 
 
