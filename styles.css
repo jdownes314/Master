@@ -322,7 +322,6 @@ tbody tr:hover {
 }
 
 /* Sticky heading with subheading */
-
 .sticky-header {
   position: sticky;
   top: 0;
@@ -347,8 +346,8 @@ tbody tr:hover {
 .section {
   overflow: visible;
 }
-``
 
+/* Chart image styling */
 .chart-image {
   width: 100%;
   height: auto;
@@ -358,6 +357,7 @@ tbody tr:hover {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+``
 
 
 ``
