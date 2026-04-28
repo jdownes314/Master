@@ -261,6 +261,19 @@ footer {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+
+  /* Mobile */
+.chart-image {
+  max-width: 100%;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .chart-image {
+    max-width: 420px;
+  }
+}
+``
  ``
   
 canvas {
