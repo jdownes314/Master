@@ -367,7 +367,7 @@ tbody tr:hover {
 
 
 /* Subheading */
-.sticky-subheading {
+.sticky-subheader {
   margin-top: 0.25rem;
   font-size: 1rem;
   color: #334155;
@@ -375,7 +375,7 @@ tbody tr:hover {
 
 
 
-.sticky-heading {
+.sticky-header {
   text-align: center;
 }
 
