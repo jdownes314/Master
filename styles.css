@@ -247,6 +247,7 @@ footer {
 .chart-image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 480px));
+  justify-content: center;
   gap: 2rem;
   justify-content: center;
 }
