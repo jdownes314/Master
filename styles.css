@@ -152,8 +152,9 @@ body {
 
 /* Sections */
 .section {
+  width: 100%;
   max-width: 100%;
-  overflow-x: hidden;  /* ✅ REQUIRED */
+  overflow-x: hidden;   /* ✅ stops runaway elements */
 }
 ``
 
@@ -247,13 +248,13 @@ footer {
 
 .chart-image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  justify-content: center;
 
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+
   box-sizing: border-box;
 }
 ``
@@ -261,15 +262,18 @@ footer {
 
 /* Chart image styling */
 .chart-image {
-  width: 100%;
-  height: auto;
   display: block;
-  box-sizing: border-box;
 
-  background: white;
+  max-width: 100%;        /* ✅ THIS is critical */
+  height: auto;
+
+  margin: 0 auto;
   padding: 1rem;
+  background: white;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
 }
 
 ``
