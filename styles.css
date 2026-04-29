@@ -249,13 +249,12 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(0, 420px));
   gap: 2rem;
   justify-content: center;
-
-  /* ✅ CRITICAL FIX */
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
 }
+
 
 /* Chart image styling */
 .chart-image {
