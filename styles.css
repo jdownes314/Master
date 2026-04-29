@@ -246,9 +246,16 @@ footer {
 
 .chart-image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 420px);
+  outline: 3px dashed blue;
+  grid-template-columns: repeat(auto-fit, minmax(0, 420px));
   gap: 2rem;
   justify-content: center;
+
+  /* ✅ CRITICAL FIX */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 /* Chart image styling */
@@ -256,7 +263,6 @@ footer {
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
   background: white;
   padding: 1rem;
   border-radius: 12px;
