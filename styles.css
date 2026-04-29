@@ -176,6 +176,17 @@ body {
   background: var(--muted);
 }
 
+.section.activity-snapshot {
+  max-width: 1200px;   /* ✅ adjust if desired */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (max-width: 1366px) {
+  .section.activity-snapshot {
+    max-width: 100%;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
