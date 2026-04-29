@@ -17,14 +17,10 @@
   box-sizing: border-box;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
+
 ``
 body {
   margin: 0;
-  overflow-x: hidden;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text);
   background: var(--background);
@@ -271,6 +267,7 @@ footer {
 
 /* Chart image styling */
 .chart-image-grid {
+  overflow-x: hidden;
   display: grid;
   gap: 2rem;
   justify-items: center;
