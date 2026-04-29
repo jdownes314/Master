@@ -194,7 +194,7 @@ body {
 
 .section.activity-snapshot img {
   max-width: 100%;
-  width: 100%;
+  width: auto;
   height: auto;
   display: block;
 }
@@ -331,6 +331,7 @@ canvas {
 /* Activity Snapshot Table */
 .activity-snapshot {
   border-top: 6px solid var(--tnt-red);
+  contain: layout; /* ✅ isolates layout calculations */
 }
 
 .snapshot-intro {
@@ -339,9 +340,12 @@ canvas {
   font-size: 1.1rem;
 }
 
+
 .table-wrapper {
+  max-width: 100%;
   overflow-x: auto;
 }
+
 
 table {
   width: 100%;
@@ -381,6 +385,34 @@ tbody tr:hover {
   font-size: 1.1rem;
 }
 
+/* HARD STOP for laptop overflow */
+.section.activity-snapshot {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow-x: hidden;
+  contain: layout;
+}
+
+/* Fix image sizing */
+.section.activity-snapshot img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/* Prevent section-wide leakage */
+.section {
+  overflow-x: hidden;
+}
+
+/* Table isolation */
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .recognition {
   padding-top: 1.5rem;
 }
@@ -413,8 +445,9 @@ tbody tr:hover {
 }
 
 .section {
-  overflow: visible;
+  overflow-x: hidden;   /* ✅ allow vertical overflow only */
 }
+
 
 
 ``
