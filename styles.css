@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+``
 body {
   margin: 0;
   overflow-x: hidden;
@@ -246,14 +251,18 @@ footer {
   margin-top: 4rem;
 }
 
-.chart-image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+.chart-image {
+  max-width: 90vw;      /* ✅ FORCE image to stay inside screen */
+  width: auto;          /* ✅ ignore huge native PNG width */
+  height: auto;
 
-  max-width: 100%;
+  display: block;
   margin: 0 auto;
-  padding: 0 1rem;
+
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 
   box-sizing: border-box;
 }
@@ -261,19 +270,11 @@ footer {
 
 
 /* Chart image styling */
-.chart-image {
-  display: block;
-
-  max-width: 100%;        /* ✅ THIS is critical */
-  height: auto;
-
-  margin: 0 auto;
-  padding: 1rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-
-  box-sizing: border-box;
+.chart-image-grid {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  padding: 0 1rem;
 }
 
 ``
