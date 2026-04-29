@@ -151,10 +151,10 @@ body {
 
 /* Sections */
 .section {
-  max-width: 900px;
-  margin: auto;
-  padding: 4rem 2rem;
+  max-width: 100%;
+  overflow-x: hidden;  /* ✅ REQUIRED */
 }
+``
 
 .section h2 {
   font-size: 2rem;
