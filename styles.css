@@ -247,14 +247,16 @@ footer {
 
 .chart-image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 420px));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
   gap: 2rem;
   justify-content: center;
+
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
 }
+``
 
 
 /* Chart image styling */
@@ -262,11 +264,14 @@ footer {
   width: 100%;
   height: auto;
   display: block;
+  box-sizing: border-box;
+
   background: white;
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+
 ``
 
   
