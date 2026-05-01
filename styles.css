@@ -27,12 +27,6 @@ body {
   line-height: 1.6;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
 
 /* Navigation */
 .nav {
