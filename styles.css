@@ -433,6 +433,10 @@ tbody tr:hover {
   text-align: center;
 }
 
+main {
+  padding-top: 64px; /* match your sticky header height */
+}
+
 .sticky-header h2 {
   margin: 0;
   color: var(--tnt-red);
