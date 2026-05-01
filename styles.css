@@ -426,7 +426,7 @@ tbody tr:hover {
 .sticky-header {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 1000;
   background: #fff7f7;
   padding: 1rem 0 0.75rem;
   border-bottom: 3px solid var(--tnt-red);
