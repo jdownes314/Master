@@ -33,6 +33,11 @@ body {
   overflow: hidden;
 }
 
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+}
+
 /* Navigation */
 .nav {
   display: flex;
