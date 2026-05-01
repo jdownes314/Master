@@ -448,9 +448,6 @@ main {
   color: #334155;
 }
 
-.section {
-  overflow-x: hidden;   /* ✅ allow vertical overflow only */
-}
 
 
 
